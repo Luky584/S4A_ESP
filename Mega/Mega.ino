@@ -104,10 +104,10 @@ void showNewData() {
   }
   if (strcmp(receivedChars, "StateF") == 0 && (newControl == true) ) {
     Serial1.println("State set Forward");
-    motorFrontL.setSpeed(70);
-    motorFrontR.setSpeed(70);
-    motorRearL.setSpeed(70);
-    motorRearR.setSpeed(70);
+    motorFrontL.setSpeed(120);
+    motorFrontR.setSpeed(120);
+    motorRearL.setSpeed(120);
+    motorRearR.setSpeed(120);
     motorFrontL.run(FORWARD);
     motorFrontR.run(FORWARD);
     motorRearL.run(FORWARD);
@@ -140,10 +140,10 @@ void showNewData() {
   }
   if (strcmp(receivedChars, "StateB") == 0 && (newControl == true) ) {
     Serial1.println("State set Backward");
-    motorFrontL.setSpeed(70);
-    motorFrontR.setSpeed(70);
-    motorRearL.setSpeed(70);
-    motorRearR.setSpeed(70);
+    motorFrontL.setSpeed(120);
+    motorFrontR.setSpeed(120);
+    motorRearL.setSpeed(120);
+    motorRearR.setSpeed(120);
     motorFrontL.run(BACKWARD);
     motorFrontR.run(BACKWARD);
     motorRearL.run(BACKWARD);
