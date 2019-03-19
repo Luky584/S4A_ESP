@@ -3,7 +3,7 @@
 #include <ESP8266WebServer.h>
 
 // Replace with your network credentials
-const char* ssid = "FrenGP_S4A";
+const char* ssid = "Robooot";
 const char* password = "RobotTesting";
 
 ESP8266WebServer server(80);   //instantiate server at port 80 (http port)
@@ -20,10 +20,10 @@ void setup(void) {
   WiFi.softAP(ssid, password); //begin WiFi access point
   Serial.println(""); 
 
-  while (WiFi.status() != WL_CONNECTED) { // Wait for connection
+ /* while (WiFi.status() != WL_CONNECTED) { // Wait for connection
     delay(500);
     Serial.print(".");
-  }
+  }*/
   Serial.println("");
   Serial.print("Created hotspot: ");
   Serial.print(ssid);
